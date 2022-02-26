@@ -1,0 +1,267 @@
+/* This stylesheet is where to add styles for your Shakespeare Play */
+/*We usually add something general for the body*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+  background-color: rgb(212, 236, 250);
+  margin: 80px 2em;
+  padding: 0;
+  /*your style rules go in here */
+}
+
+
+h1.tocheading1 {
+  text-align: center;
+}
+
+section {
+  border: 0;
+}
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+section.dramatis {
+  width: 70%;
+  margin: 12px auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px black;
+  max-width: 750px;
+  line-height: 1.6;
+}
+h1.dramatishead {
+  color: white;
+  text-align: center;
+  background-color: gray;
+  padding: 10px;
+}
+section.play {
+  background-color: white;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  max-width: 750px;
+}
+.backtotop {
+  position: fixed;
+  bottom: 2px;
+  right: -1100px;
+  opacity: 0.9;
+}
+.backtotop a {
+  text-decoration: none;
+  font-size: 3em;
+  color: gray;
+}
+.backtotop a:hover {
+  color: black;
+}
+
+div {
+  width: 100%;
+}
+
+img {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+}
+h1.actsforimageinsertion {
+  background-color: gray;
+  color: white;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+p.character {
+  margin: 10px;
+  position: relative;
+  left: 2em;
+  font-weight: 600;
+}
+p.charactername {
+  padding: 2px;
+  text-align: center;
+}
+p.characterrole{
+  padding: 2px;
+  text-align: center;
+}
+h2.location {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+h2.firstscene {
+  text-align: center;
+  background-color: rgb(212, 236, 250);
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h2.scene {
+  text-align: center;
+  background-color: rgb(212, 236, 250);
+  margin: 20px auto;
+  padding: 10px;
+}
+strong.allscenes {
+  font-weight: 500;
+}
+strong.scene {
+  font-weight: 500;
+}
+
+.stagedirection {
+  margin: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+.widowexeunt {
+  margin: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+.verseline {
+  margin: 0 0 0.4em 20%;
+}
+
+p.prose {
+  margin: 0 0 0.4em 20%;
+}
+
+.stagedirectionsinline {
+  font-weight: bold;
+}
+
+.character_beforespeech {
+  display: block;
+  position: relative;
+  left: -8em;
+  top: 1em;
+  /* font-size: 1.1em; */
+  width: 4em;
+}
+
+@media screen and (max-width: 750px) {
+  dramatis,
+  .play, .dramatis{
+      width: 100%;
+      padding: 1em 3em;
+  }
+  
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(128, 128, 128);
+  z-index: 100;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  flex: 0 0 8rem; /*the same as flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+li.home {
+  margin-right: auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  color: black;
+}
+
+nav ul li:hover {
+  background-color: rgb(212, 236, 250);
+}
+nav ul li a:hover {
+  color: black;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color: rgb(212, 236, 250);
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 8rem; /* the same as the value for flex-basis on the parent li */
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+    
+    /*   ~ the tilda points to the next sibling selector */
+  
+    input[type="checkbox"]:checked ~ ul {
+      display: block;
+    }
+  
+    li ul {
+      position: static;
+    }
+    nav ul li {
+      flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+      width: 100%;
+    }
+  
+  }
+  /* this is where your nav list items will be */
