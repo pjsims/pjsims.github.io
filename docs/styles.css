@@ -7,7 +7,7 @@ body {
     background-color: rgb(212, 236, 250);
     margin: 0;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2em;
+    font-size: 1.05em;
 }
 
 header {
@@ -55,6 +55,7 @@ main {
 
 ul {
     text-align: left;
+    font-size: 1.05em;
 }
 
 figure {
