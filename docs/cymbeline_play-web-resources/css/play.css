@@ -36,7 +36,6 @@ section {
 /* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
 
 section.dramatis {
-  width: 70%;
   margin: 12px auto;
   padding: 10px;
   background-color: white;
