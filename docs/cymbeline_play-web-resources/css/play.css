@@ -58,7 +58,7 @@ section.play {
 .backtotop {
   position: fixed;
   bottom: 2px;
-  right: -1100px;
+  right: -950px;
   opacity: 0.9;
 }
 .backtotop a {
