@@ -235,9 +235,6 @@ nav ul li ul li {
 }
 
 @media screen and (max-width: 900px) {
-  body {
-    
-  }
   nav ul {
     display: none;
     flex-direction: column;
@@ -248,6 +245,11 @@ nav ul li ul li {
     float: right;
     cursor: pointer;
   }
+
+  #toggle:checked ~ #menu {
+    display: block !important;
+  }
+
     
     /*   ~ the tilda points to the next sibling selector */
   
