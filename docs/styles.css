@@ -12,7 +12,6 @@ body {
 
 header {
     font-family: 'Cormorant Garamond', serif;
-    width: 70%;
     margin: 10px auto 10px auto;
     padding: 8px;
     background-color: gray;
@@ -41,16 +40,6 @@ main {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.05em;
     max-width: 750px;
-}
-
-.p1 {
-    border: 2px black;
-    margin: 2px;
-    padding: 2px;
-}
-
-.p2 {
-    border: 2px black;
 }
 
 ul {
